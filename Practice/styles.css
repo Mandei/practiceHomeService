@@ -108,7 +108,7 @@ a:hover{
     {
     background-color: rgb(172, 77, 77);
     padding: 5px;
-    width:100%;
+    width:0;
     height:15%;
     position: fixed;
     left: 0;
@@ -176,13 +176,13 @@ a:hover{
  
   .content
   {
-      margin-left: 250px;
+      margin-left: 20%;
   }
  
   .top_head
   {
-      margin: 5% 14% 0 ;
-      width:72%;
+      margin: 5% 16% 0 ;
+      width:73%;
       color: whitesmoke;
       background-color:purple;
       padding:12px;
@@ -190,7 +190,7 @@ a:hover{
 
   .table
   {
-      margin:0% 12% 5%;
+      margin:0% 15% 5%;
       position: relative;
       z-index: -1;
       top:-10px;
@@ -201,7 +201,7 @@ a:hover{
   {
     width:60px;
     height:50px;
-    margin:0 10px 3px 32px;
+    margin:0 10px 0 30px;
     border-top-right-radius: 50%;
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
