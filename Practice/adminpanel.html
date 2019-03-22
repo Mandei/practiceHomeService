@@ -19,8 +19,8 @@
     
     .sidenav {
       margin-top:6%;
-      height: 90%;
-      
+      height: 94%;
+      width:20%;
       position: fixed;
       z-index: 1;
       top: 0;
@@ -62,17 +62,7 @@
     }
     </style>
 
-<script>
 
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-
-</script>
 <body>
     
         <nav class="navbar navbar-expand-lg  sticky-top"  >
@@ -114,14 +104,13 @@
                  
                 </div>
               </nav>
-        <div class="container">
-           
-              <div id="mySidenav " class="sidenav col-lg-3 col-md-4 col-sm-12">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        
+              <div id="mySidenav" class="sidenav  ">
+                  
                   <div class="d-inline-flex  "> 
                   <img src="images/profile.png"  class="profile_pic"> <label class="p-2">Mandeep <br><small>Admin</small> </label>
-                  
                   </div>
+
                   <a href="#">Dashboard</a>
                   <a href="#">User Profile</a>
                   <a href="#">Services</a>
@@ -134,7 +123,7 @@
               
                     
                 
-               <div class="content col-lg-9 col-md-8 col-sm-12 " >
+               <div class="content " >
                  
                 <div class="top_head border"> List of Workers <br> <small>Recently added</small></div>
                    
@@ -170,7 +159,7 @@
                   </table>
                 </div> 
                 
-              </div>
+            
 
               </body>
 </html>
