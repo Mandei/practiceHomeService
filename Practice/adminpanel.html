@@ -23,7 +23,6 @@
       height: 94%;
       width:250px;
       position: fixed;
-      z-index: 1;
       top: 0;
       left: 0;
       background-color: #111;
@@ -42,7 +41,6 @@
       width:50px;
       height:40px;
       top:0;
-      transition: 2s;
       left:0;
     }
     
@@ -75,12 +73,12 @@
     </style>
 <script>
         function openSidebar() {
-          document.getElementById("mySidenav").style.display = "block";
           
+          document.getElementById("mySidenav").style.display = "block";
         }
 
         function closeSidebar() {
-          document.getElementById("mySidenav").style.display = "none";
+         document.getElementById("mySidenav").style.display = "none";
         }
 </script>
 <body>
@@ -100,25 +98,28 @@
                     </li>
                         
                     <li class="nav-item ">
-                            <select style=" margin:18px" class="loginbtn">
-                                <option selected disabled >Search location</option>
-                                <option >Hinjawadi</option>
-                                <option >Baner</option>
-                                <option >Pune</option>
-                                <option >Wakad</option>
-                            </select>
+                      <input class=" search " type="search" placeholder="Search" aria-label="Search"><a><i id="nav_search_icon" class="fa fa-search" href="search.html"></i></a>
                     </li>
 
-                  
+                 
 
                   </ul>
                   
                     <form class="form-inline my-2 my-lg-0 ">
-                        <input class="form-control mr-sm-2 search " type="search" placeholder="Search" aria-label="Search"><a id="nav_search_icon" class="fa fa-search" href="search.html"></a>
+
+                        <a href="#" class="notification mg-15 ">
+                            <span><i class="fa fa-envelope"></i></span>
+                            <span class="badge">2</span>
+                        </a>
+                        
+                        <a href="#" class="notification mg-35 ">
+                          <span><i class="fa fa-bell"></i></span>
+                          <span class="badge">3</span>
+                        </a>
                         
                         <a href="#" class="btn btn-col btn-sm">
                             <span class="fa fa-sign-out my-2 mr-3"></span> Log out
-                          </a>
+                        </a>
                             
                     </form>
                  
@@ -126,10 +127,10 @@
               </nav>
         </div>
               
-              <button class="toggle_btn hide-large" onclick="openSidebar()">&#9776;</button>
-              <div class="sidenav sidebar-collapse hide-small"  id="mySidenav">
-                  
-                  <a href="javascript:void(0)" class="closebtn hide-large" onclick="closeSidebar()">&times;</a>
+              <button class="toggle_btn hide-large" onclick="openSidebar()" >&#9776;</button>
+              <div class="sidenav sidenav-collapse animate-left  "  id="mySidenav">
+                
+                  <a href="javascript:void(0)" class="closebtn hide-large" onclick="closeSidebar()" >&times;</a>
                   <div class="d-inline-flex  "> 
                   <img src="images/profile.png"  class="profile_pic"> <label class="p-2">Mandeep <br><small>Admin</small> </label>
                   </div>
@@ -169,16 +170,16 @@
                         <td>110</td>
                       </tr>
                       <tr>
-                          <th >Kailash</th>
-                          <td>Electrician</td>
+                          <th >Manish</th>
+                          <td>plumber</td>
                           <td>Not alloted</td>
-                          <td>110</td>
+                          <td>100</td>
                       </tr>
                       <tr>
                           <th >Kailash</th>
                           <td>Electrician</td>
                           <td>Not alloted</td>
-                          <td>110</td>
+                          <td>950</td>
                       </tr>
                     </tbody>
                   </table>
