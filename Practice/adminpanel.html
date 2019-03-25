@@ -7,85 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HomeService</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="adminStyles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.5/css/mdb.min.css" rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="adminPanel.js"></script>
+
 </head>
 
-<style>
-    
-    
-    .sidenav {
-      margin-top:75px;
-      height: 94%;
-      width:250px;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 1s;
-      padding-top: 60px;
-    }
-
-    .toggle_btn
-    {
-      position: realtive;
-      background-color: rgb(34, 33, 33);
-      color: whitesmoke;
-      border:0;
-      cursor: pointer;
-      width:50px;
-      height:40px;
-      top:0;
-      left:0;
-    }
-    
-    .sidenav a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-    }
-    .sidenav label
-      {
-          color: white;
-      }
-    
-    .sidenav a:hover {
-      color: #f1f1f1;
-    }
-    
-    .sidenav .closebtn {
-      position: absolute;
-      top: 0;
-      right: 25px;
-      font-size: 36px;
-      margin-left: 50px;
-    }
-  
-    
-    </style>
-<script>
-        function openSidebar() {
-          
-          document.getElementById("mySidenav").style.display = "block";
-        }
-
-        function closeSidebar() {
-         document.getElementById("mySidenav").style.display = "none";
-        }
-</script>
 <body>
     <div>
         <nav class="navbar  navbar-custom navbar-dark navbar-expand-lg  sticky-top "  >
             <div class="logo">
-                <img  src="images/aboutus.png" height="60px" width="60px"  style="cursor: pointer"/>
+                <img  src="images/aboutus.png" />
             </div>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
@@ -117,7 +54,7 @@
                           <span class="badge">3</span>
                         </a>
                         
-                        <a href="#" class="btn btn-col btn-sm">
+                        <a href="#" class="btn logout-btn btn-sm">
                             <span class="fa fa-sign-out my-2 mr-3"></span> Log out
                         </a>
                             
@@ -128,7 +65,7 @@
         </div>
               
               <button class="toggle_btn hide-large" onclick="openSidebar()" >&#9776;</button>
-              <div class="sidenav sidenav-collapse animate-left  "  id="mySidenav">
+              <div class="sidenav sidenav-collapse  "  id="mySidenav">
                 
                   <a href="javascript:void(0)" class="closebtn hide-large" onclick="closeSidebar()" >&times;</a>
                   <div class="d-inline-flex  "> 
@@ -150,10 +87,10 @@
                 
                <div class="content " >
                  
-                <div class="top_head border"> List of Workers <br> <small>Recently added</small></div>
+                <div class="top-head-table border"> List of Workers <br> <small>Recently added</small></div>
                    
                 
-                 <table class="table w-75 ">
+                 <table class="table w-75  ">
                     <thead  >
                       <tr>
                         <th scope="col">Name</th>
@@ -164,19 +101,19 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <th >Kailash</th>
+                        <td >Kailash</td>
                         <td>Electrician</td>
                         <td>Not alloted</td>
                         <td>110</td>
                       </tr>
                       <tr>
-                          <th >Manish</th>
+                          <td >Manish</td>
                           <td>plumber</td>
                           <td>Not alloted</td>
                           <td>100</td>
                       </tr>
                       <tr>
-                          <th >Kailash</th>
+                          <td >Kailash</td>
                           <td>Electrician</td>
                           <td>Not alloted</td>
                           <td>950</td>
