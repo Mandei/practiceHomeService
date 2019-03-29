@@ -7,6 +7,7 @@
         margin-top: 0px !important;
     }
 
+
     .logo img{
         width:60px;
         height:60px;
@@ -17,21 +18,29 @@
         border-bottom-left-radius: 50%;
     }
 
-    
+
     .admin-body{
         background-image: linear-gradient(to right, #3fc0e7,hsl(246, 41%, 28%));
     }
+
 
     a:hover{
         text-decoration: none;
     }
 
+
+    button:focus{
+        outline-style: none;
+        cursor: pointer;
+    }
+    
     .active
     {
         color: white;
         font-weight: bold;
         
     }
+
 
     .navbar-custom {
         color: #FFFFFF;
@@ -57,21 +66,34 @@
     }
 
     .login-btn{
-        border-radius:8px;
+        border-radius:12px;
         padding: 6px 20px;
         outline: none;
+        background-color: orange;
     }
 
     .search-drop{
         border-radius:24px;
         padding: 6px 20px;
         outline: none;
+       
     }
 
     
 
-    @media (min-width:768px){.hide-large{display:none!important} .sidenav-collapse{width:272px!important}  }
-    @media (max-width:768px){.sidenav-collapse{width:0px;} .content{margin-left:0px!important;width:100%!important}  .sidenav a {font-size: 12px;} } 
+    @media (min-width:768px)
+    {.hide-large{display:none!important} 
+    .sidenav-collapse{width:272px!important}  
+    }
+
+    @media (max-width:768px)
+    {
+    .sidenav-collapse{width:0px;} 
+    .content{margin-left:0px!important;width:100%!important}  
+    .sidenav a {font-size: 12px;} 
+    
+    
+    } 
 
 
     .transbox {
@@ -83,18 +105,58 @@
         filter: alpha(opacity=60); /* For IE8 and earlier */
     }
     
+    .main-footer{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
 
+    .page-footer{
+        bottom: 0;
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
 
-.main-footer{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-     color: white;
-}
-.page-footer{
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-     color: white;
-}
+    .form-control
+    {
+        border-radius: 24px;
+        max-width: 180px;
+    }
+
+    
+
+    .modal-btn
+    {
+        border:none;
+        background-color:white; 
+    }
+
+    .modal-btn:focus
+    {
+        outline-style:none;
+    }
+
+    .modal{
+        position:absolute;
+        margin-top:13%;
+    }
+
+    .modal-table{
+        margin:auto; 
+        text-align: center;
+        border: 1px solid;
+    }
+     
+    .modal-table td{
+        border:1px solid;
+        width:150px;
+        text-align: center;
+    }
+
+    .scroll{
+        max-height:200px;
+        overflow:auto;
+    }
